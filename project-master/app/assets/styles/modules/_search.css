@@ -1,0 +1,31 @@
+.search{
+    display: flex;
+    border: 1px solid #f6f6f7;
+    position: relative;
+    
+    &__input{
+        width: 70%;
+        border: none;
+        font-size: .8rem;
+        background: transparent;
+        border: none;
+        border-right: 1px solid #f6f6f7;
+        padding: 20px 50px;
+    }
+
+    &__sort{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        cursor: pointer;
+    }
+
+    &__img{
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        width: 16px;
+    }
+}

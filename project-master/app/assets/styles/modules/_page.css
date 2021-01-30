@@ -1,0 +1,7 @@
+.page{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}

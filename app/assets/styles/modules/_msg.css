@@ -1,0 +1,127 @@
+.msg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 34px 27px;
+    position: relative;
+    border: 1px solid #f6f6f7;
+    cursor: pointer;
+    border-left: 5px solid rgba(0,0,0,0);
+
+    &__container{
+        height: calc(100vh - 119.5px);
+        overflow: auto;
+    }
+
+    &--active{
+        border-left: 5px solid #4F7EFE;
+        background: #ffffff;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1), 0 0px 3px rgba(0,0,0,0.1);
+    }
+
+    &__logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #f6f6f7;
+        padding: 4px;
+
+        &--avatar{
+            padding: unset;
+        }
+
+        &--letter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4F7EFE;
+            background: #D9E9FF;
+            font-weight: 700;
+        }
+    }
+
+    &__more{
+        width:9px;
+        cursor: pointer;
+        margin-right: 16px;
+    }
+
+    &__content{
+        padding-left: 15px;
+        position: relative;
+
+        &-wrapper {
+            position: absolute;
+            bottom: 17px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 104px;
+            padding-right: 20px;
+        }
+    }
+
+    &__truncated{
+        width: 85%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    &__star{
+        width: 16px;
+        cursor: pointer;
+    }
+
+    &__title{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        padding-left: 104px;
+        padding-right: 20px;
+        top: 20px;
+
+        &--main{
+            padding-left: 12px;
+        }
+    }
+
+    &__plus{
+        width: 10px;
+
+        &-container{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #F8FAFF;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &-inner-container{
+            width: 40px;
+            height: 40px;
+            background: #4F7EFE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &--smaller{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+}

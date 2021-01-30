@@ -1,0 +1,48 @@
+.text{
+    font-size: 1rem;
+
+    &--small{
+        font-size: .85rem;
+
+        &--ex{
+            font-size: .75rem;
+        }
+    }
+
+    &--big{
+        font-size: 1.6rem;
+    }
+
+    &--medium{
+        font-size: .9rem;
+    }
+
+    &--white{
+        color: white;
+    }
+
+    &--bold{
+        font-weight: 500;
+    }
+
+    &--black{
+        color: #6A6C71;
+    }
+
+    &--light{
+        color: #9D9D9F;
+        font-weight: 400;
+
+        &--only{
+            font-weight: 400;
+        }
+    }
+    
+    &--spaced-line{
+        line-height: 30px;
+    }
+
+    &--center{
+        text-align: center;
+    }
+}
